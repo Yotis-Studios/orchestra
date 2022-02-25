@@ -3,8 +3,8 @@ const bodyParser = require('body-parser');
 
 const config = require('./config');
 
-const challengeManager = require('./pow/ChallengeManager')(config);
-const gameManager = require('./game/GameManager')(config, challengeManager);
+const challengeManager = new (require('./src/pow/ChallengeManager'))(config);
+const gameManager = new (require('./src/game/GameManager'))(config, challengeManager);
 
 const app = express();
 app.use(bodyParser.urlencoded({
@@ -41,5 +41,5 @@ app.post('/games', (req, res) => {
 });
 
 app.listen(config.port, () => {
-    console.log(`Orchestra launched on ${port}!`);
+    console.log(`Orchestra launched on ${config.port}!`);
 });
