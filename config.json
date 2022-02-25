@@ -1,0 +1,10 @@
+{
+    "port": 8080,
+    "version": "1.0.0",
+    "accessKey": "CHANGEME",
+    "powDifficulty": 3,
+    "spawnCommand": "node",
+    "spawnArguments": ["index.js"],
+    "spawnDirectory": "../GameServer",
+    "maxGames": 10
+}

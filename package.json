@@ -1,0 +1,25 @@
+{
+  "name": "orchestra",
+  "version": "1.0.0",
+  "description": "orchestration server for hosting multiplayer games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yotis-Studios/orchestra.git"
+  },
+  "author": "Yotis Studios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yotis-Studios/orchestra/issues"
+  },
+  "homepage": "https://github.com/Yotis-Studios/orchestra#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "md5": "^2.3.0",
+    "random": "^3.0.6"
+  }
+}
